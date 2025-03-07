@@ -66,13 +66,13 @@ This project uses the Docker Image sepehrmdn/nginx_hello available on Docker Hub
 
 The project directory is organized as follows:
 simple_nginx_ec2/
-    ```markdown
+    ```backtick
     ├── ansible_playbook       # Main play book, roles, hosts and etc.
     ├── module/EC2_instance    # EC2 instance module
     ├── .gitignore             # ignored files
     ├── README.md              # Project documentation
     ├── main.tf                # Terraform configuration for AWS resources
-
+    ```
 
 ## How It Works
 
