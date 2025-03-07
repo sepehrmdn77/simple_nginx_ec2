@@ -40,7 +40,7 @@ First, clone the repository to your local machine:
 
 2. **Configure the Terraform Variables**
 Create a terraform.tfvars file to specify required variables:
-    '''hcl
+    '''bash
     aws_access_key = "Your AWS Access Key"
     aws_secret_key = "Your AWS Secret Key"
     region         = "eu-west-2"
