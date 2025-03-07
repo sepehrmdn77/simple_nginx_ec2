@@ -75,13 +75,13 @@ simple_nginx_ec2/
 
 ## How It Works
 
-    1.Terraform provisions an EC2 instance in the eu-west-2 (London) region.
+1.Terraform provisions an EC2 instance in the eu-west-2 (London) region.
 
-    2.User Data scripts pre-install Python and Git on the instance.
+2.User Data scripts pre-install Python and Git on the instance.
 
-    3.Ansible installs Docker, pulls the sepehrmdn/nginx_hello Docker Image, and starts the container.
+3.Ansible installs Docker, pulls the sepehrmdn/nginx_hello Docker Image, and starts the container.
 
-    4.Nginx serves a "Hello World" message on the port number 8181.
+4.Nginx serves a "Hello World" message on the port number 8181.
 
 ## Contributing
 
