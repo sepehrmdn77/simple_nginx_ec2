@@ -40,9 +40,9 @@ First, clone the repository to your local machine:
 
 2. **Configure the Terraform Variables**
 Create a terraform.tfvars file to specify required variables:
-    '''bash
-    aws_access_key = "Your AWS Access Key"
-    aws_secret_key = "Your AWS Secret Key"
+    ```bash
+    aws_access_key = "Your AWS Access Key" # or export it using terraform document
+    aws_secret_key = "Your AWS Secret Key" # or export it using terraform document
     region         = "eu-west-2"
     key_name       = "Your Key Pair Name"
     ami            = "ami-091f18e98bc129c4e" # Ubuntu 20.04 LTS AMI
@@ -50,14 +50,14 @@ Create a terraform.tfvars file to specify required variables:
 
 3. **Deploy Resources with Terraform**
 Run the following commands to deploy the infrastructure:
-    ```bash
+    ```hcl
     terraform init
     terraform apply
 
 
 4. **Configure EC2 Instance with Ansible**
 Use Ansible to install Docker and deploy the Nginx container:
-    '''bash
+    ```bash
     ansible-playbook -i inventory playbook.yml -vv
 
 ## Docker Image Details
