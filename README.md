@@ -47,13 +47,11 @@ Create a terraform.tfvars file to specify required variables:
     key_name       = "Your Key Pair Name"
     ami            = "ami-091f18e98bc129c4e" # Ubuntu 20.04 LTS AMI
 
-
 3. **Deploy Resources with Terraform**
 Run the following commands to deploy the infrastructure:
     ```hcl
     terraform init
     terraform apply
-
 
 4. **Configure EC2 Instance with Ansible**
 Use Ansible to install Docker and deploy the Nginx container:
