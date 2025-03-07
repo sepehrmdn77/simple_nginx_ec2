@@ -62,18 +62,6 @@ Use Ansible to install Docker and deploy the Nginx container:
 
 This project uses the Docker Image sepehrmdn/nginx_hello available on Docker Hub. The container runs a simple Nginx server, which serves a "Hello World" message. The environment can be easily extended to support larger web applications.
 
-## Project Structure
-
-The project directory is organized as follows:
-simple_nginx_ec2/
-    ```backtick
-    ├── ansible_playbook       # Main play book, roles, hosts and etc.
-    ├── module/EC2_instance    # EC2 instance module
-    ├── .gitignore             # ignored files
-    ├── README.md              # Project documentation
-    ├── main.tf                # Terraform configuration for AWS resources
-    ```
-
 ## How It Works
 
 1.Terraform provisions an EC2 instance in the eu-west-2 (London) region.
